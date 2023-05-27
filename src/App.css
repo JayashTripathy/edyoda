@@ -3,19 +3,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 @font-face {
   font-family: "Raleway";
-  src: local("Raleway"), urlurl('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');;
+  src: local("Raleway"), url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');;
   font-weight: normal;
   font-display: block;
 }
-/* @font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), url("../public//fonts/Montserrat-VariableFont_wght.ttf");
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap');;
   font-weight: normal;
-} */
+}
 
 /* style variables  */
 :root {
@@ -60,7 +61,10 @@
 }
 
 body{
-  background: url(./assets/mainbg.png) no-repeat center center fixed;
+  background: url(./assets/mainbg.png) no-repeat fixed;
+
+  
+  font-family: 'Raleway', sans-serif;
   
   color: var(--text-1);
 
