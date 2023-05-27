@@ -8,7 +8,7 @@ function homepage() {
         <div className="head-text">
           Access curated courses worth
           <div className="sub-head">
-            ₹ <span className="red-cut">18,500</span> at just{" "}
+          <span className="grow">₹ </span><span className="red-cut">18,500</span> at just{" "}
             <span className="highlight grow">₹ 99 </span>per year!
           </div>
         </div>
