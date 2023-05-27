@@ -1,0 +1,68 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), urlurl('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');;
+  font-weight: normal;
+  font-display: block;
+}
+/* @font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../public//fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: normal;
+} */
+
+/* style variables  */
+:root {
+
+  /* COLORS */
+  --primary-1: #47BA68;
+  --primary-2: linear-gradient(257deg, rgba(0,72,255,1) 0%, rgba(0,150,255,1) 100%);
+
+  /* TEXT */
+  --text-1: #D9D9D9;
+  --text-2: #3C4852;
+  --text-3: #BEBEBE;
+  --text-4: #FFFFFF;
+  /* STATUS COLORS */
+  --success: #47BA68;
+  --error-2: #D7EDDD;
+  --danger-1: #F77171;
+  --danger-2: #FF0000;
+  /* ALERT */
+  --alert-text: #DE4313;
+  --alert-border: linear-gradient(135deg, #DE4313 0%, #DE4313 0.75%, #DE4313 2.92%, #DE4414 6.37%, #DF4515 10.97%, #DF4816 16.59%, #E04B18 23.1%, #E1501B 30.37%, #E3561F 38.27%, #E55E24 46.66%, #E7682B 55.41%, #EB7533 64.39%, #EE843C 73.47%, #F39547 82.52%, #F8A954 91.41%, #FEC163 100%); ;
+  --alert-fill: linear-gradient(135deg, rgba(222, 67, 19, 0.2) 0%, rgba(222, 67, 19, 0.2) 0.75%, rgba(254, 193, 99, 0.2) 100%);;
+
+  --disabled: #E7E7E7;
+   
+  
+  
+  
+  /* FONT WEIGHT */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 900;
+  
+  
+  /* z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+}
+
+body{
+  background: url(./assets/mainbg.png) no-repeat center center fixed;
+  
+  color: var(--text-1);
+
+}
+

@@ -1,0 +1,67 @@
+.navbar {
+  font-family: "raleway", sans-serif;
+  background: #ffffff;
+  max-width: 100%;
+}
+.nav-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 72px;
+  color: black;
+}
+.primary-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 50px;
+
+  flex-grow: 1;
+}
+
+.main-logo {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 45px;
+  background: var(--primary-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.re-pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.re-pages div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.right-options{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.join-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 42px;
+    background: var(--primary-2);
+    color: var(--text-4);
+    border-radius: 30px;
+    font-weight: 700;
+font-size: 16px;
+border: none;
+}
