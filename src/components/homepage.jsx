@@ -77,6 +77,7 @@ function homepage() {
               12 Months Subscription
               <div className="price">sdsd</div>
             </label>
+            <div className="info">Recommended</div>
           </div>
           <div className="radio-item ">
             <input
@@ -90,6 +91,7 @@ function homepage() {
               12 Months Subscription
               <div className="price">sdsd</div>
             </label>
+            <div className="info">Recommended</div>
           </div>
         </div>
       </div>
