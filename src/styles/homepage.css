@@ -139,8 +139,11 @@
 .radio-item {
   position: relative;
   width: 100%;
+  transition: scale 100ms ease-in-out;
 }
-
+.radio-item:hover {
+  scale: 103%;
+}
 .radio-item label::before {
   position: absolute;
   content: "";
@@ -152,7 +155,9 @@
   /* border: 2px solid var(--text-3); */
   top: calc(50% - 14px);
   left: 8px;
+  
 }
+
 
 /* .active-success.radio-item {
   border: 2px solid var(--success);
@@ -168,11 +173,11 @@
   border: 2px solid var(--success);
   background-color: var(--success-2);
 }
-.info {
+.tag {
   font-size: 0;
 }
 
-.radio-input[type="radio"]:checked ~ .info {
+.radio-input[type="radio"]:checked ~ .tag {
   display: flex;
   position: absolute;
   top: 0;
