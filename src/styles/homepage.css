@@ -1,9 +1,13 @@
 .homepage {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   max-width: 90%;
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 40rem;
+ 
 }
 
 .content {
@@ -12,6 +16,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  flex-grow: 1;
 }
 .head-text {
   font-weight: 600;
@@ -43,11 +48,57 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
 }
 .feature {
   display: flex;
   gap: 2rem;
   align-items: center;
   font-weight: 600;
+}
+
+.pricing-form {
+  background: var(--text-4);
+  width: 30rem;
+  border-radius: 8px;
+  color: var(--text-2);
+  padding: 2rem;
+}
+
+.progress {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+ 
+  gap: 9rem;
+  
+
+}
+.steps{
+  display: grid;
+  place-items: center;
+  gap: .5rem;
+}
+
+.step {
+  background-color: #0096ff;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  color: var(--text-4);
+
+  
+  
+}
+.select-plan{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 2rem 0;
 }
