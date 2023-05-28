@@ -65,18 +65,32 @@ function homepage() {
         {/* input radios */}
 
         <div className="radio-list">
-          <div className="radio-item active-success">
-            
-            <div className="details">
-            <input className="radio-input " type="radio" name="radio" id="radio1" checked />
-              <label htmlFor="radio1">12 Months Subscription </label>
+          <div className="radio-item ">
+            <input
+              className="radio-input "
+              type="radio"
+              name="radio"
+              id="radio1"
+              checked
+            />
+            <label htmlFor="radio1">
+              12 Months Subscription
               <div className="price">sdsd</div>
-            </div>
+            </label>
           </div>
-         
-         
-         
-       
+          <div className="radio-item ">
+            <input
+              className="radio-input "
+              type="radio"
+              name="radio"
+              id="radio2"
+              checked
+            />
+            <label htmlFor="radio2">
+              12 Months Subscription
+              <div className="price">sdsd</div>
+            </label>
+          </div>
         </div>
       </div>
     </form>
