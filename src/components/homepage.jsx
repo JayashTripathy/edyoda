@@ -36,26 +36,26 @@ function homepage() {
           </div>
 
           <div className="feature">
-            <img src="public\clock.png" width="45px" alt="" />
+            <img src="clock.png" width="45px" alt="" />
             <div>
               <span className="highlight">20,000+</span> Hours of contents
             </div>
           </div>
           <div className="feature">
-            <img src="public\live.png" width="45px" alt="" />
+            <img src="live.png" width="45px" alt="" />
             <div>
               <span className="highlight">Exclusive</span> webinar access
             </div>
           </div>
           <div className="feature">
-            <img src="public\scholarship.png" width="45px" alt="" />
+            <img src="scholarship.png" width="45px" alt="" />
             <div>
               Scholarship worth
               <span className="highlight"> ₹94,500</span>
             </div>
           </div>
           <div className="feature">
-            <img src="public\ads.png" width="45px" alt="" />
+            <img src="ads.png" width="45px" alt="" />
             <div>
               <span className="highlight">Ad Free</span> learning experience
             </div>
