@@ -16,7 +16,7 @@
   flex-direction: column;
   gap: 2.5rem;
   flex-grow: 1;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .head-text {
   font-weight: 600;
@@ -159,7 +159,7 @@
 .radio-item label::before {
   position: absolute;
   content: "";
-  background: url("../assets/none.png") no-repeat;
+  background: url("/public/none.png") no-repeat;
   background-size: 80%;
   width: 2rem;
   height: 2rem;
@@ -175,11 +175,11 @@
 } */
 
 .radio-input[type="radio"]:checked ~ label::before {
-  background: url("../assets/selected.png") no-repeat;
+  background: url("/public/selected.png") no-repeat;
   /* border: 2px solid var(--text-3); */
 }
 .radio-input[type="radio"]:disabled ~ label::before {
-  background: url("../assets/dot.png") no-repeat;
+  background: url("/public/dot.png") no-repeat;
   top: calc(50% - 16px);
 }
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/homepage.css";
 
+
 function homepage() {
   const [radioPrice, setRadioPrice] = useState("179");
   const [limitedPrice, setLimitedPrice] = useState(null);
@@ -28,33 +29,33 @@ function homepage() {
         </div>
         <div className="features">
           <div className="feature">
-            <img src="src\assets\book.png" width="45px" alt="" />
+            <img src="book.png" width="45px" alt="" />
             <div>
               <span className="highlight">100+</span> Job relevant courses
             </div>
           </div>
 
           <div className="feature">
-            <img src="src\assets\clock.png" width="45px" alt="" />
+            <img src="public\clock.png" width="45px" alt="" />
             <div>
               <span className="highlight">20,000+</span> Hours of contents
             </div>
           </div>
           <div className="feature">
-            <img src="src\assets\live.png" width="45px" alt="" />
+            <img src="public\live.png" width="45px" alt="" />
             <div>
               <span className="highlight">Exclusive</span> webinar access
             </div>
           </div>
           <div className="feature">
-            <img src="src\assets\scholarship.png" width="45px" alt="" />
+            <img src="public\scholarship.png" width="45px" alt="" />
             <div>
               Scholarship worth
               <span className="highlight"> ₹94,500</span>
             </div>
           </div>
           <div className="feature">
-            <img src="src\assets\ads.png" width="45px" alt="" />
+            <img src="public\ads.png" width="45px" alt="" />
             <div>
               <span className="highlight">Ad Free</span> learning experience
             </div>

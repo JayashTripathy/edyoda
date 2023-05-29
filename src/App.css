@@ -55,7 +55,7 @@
 }
 
 body{
-  background: url(./assets/mainbg.png) no-repeat fixed;
+  background: url(../public/mainbg.png) no-repeat fixed;
 
   
   font-family: 'Raleway', sans-serif;
