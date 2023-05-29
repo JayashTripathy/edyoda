@@ -3,19 +3,18 @@ import "../styles/homepage.css";
 
 function homepage() {
   const [radioPrice, setRadioPrice] = useState("179");
-  const [limitedPrice, setLimitedPrice] = useState("18500");
+  const [limitedPrice, setLimitedPrice] = useState(null);
 
   const updatePrice = (e) => {
-    const value =  `${18500 - e.target.value}`;
+    const value = `${18500 - e.target.value}`;
     setRadioPrice(e.target.value);
-    setLimitedPrice(value)
+    setLimitedPrice(value);
     console.log(value);
-
   };
   const handleChange = (e) => {
     console.log(e.target.value);
-  }
-  
+  };
+
   return (
     <form className="homepage">
       <div className="content">
@@ -111,7 +110,6 @@ function homepage() {
               type="radio"
               name="radio"
               id="radio2"
-             
               value="179"
               onChange={handleChange}
               onClick={updatePrice}
@@ -137,7 +135,6 @@ function homepage() {
               type="radio"
               name="radio"
               id="radio3"
-            
               value="149"
               onChange={handleChange}
               onClick={updatePrice}
@@ -163,7 +160,6 @@ function homepage() {
               type="radio"
               name="radio"
               id="radio4"
-              
               value="99"
               onChange={handleChange}
               onClick={updatePrice}
@@ -185,35 +181,38 @@ function homepage() {
           </div>
 
           {/* total */}
-
+          {!limitedPrice ? (
+              ""
+            ) : (
           <div className="total-section">
             <div className="fee">
               <div className="fee-title">Subscription Fee</div>
               <div className="fee-val">₹18,500</div>
             </div>
-
-            <div className="limited-time">
-              <div>
-                <div className="lim-title">Limited time offer</div>
-                <div className="fee-val">₹{limitedPrice.slice(0,2)},{limitedPrice.slice(2,12)}</div>
-              </div>
-              <div className="time-offer">
-                <img src="src\assets\time.png" alt="" /> Offer valid till 25th
-                March 2023{" "}
-              </div>
-            </div>
-            <div className="fee">
-              <div className="">Total (Incl. of 18% GST)</div>
-              <div className="fee-val">₹{radioPrice}</div>
-            </div>
-            <div className=" payment">
-               <button>cancel</button>
-               <button>proceed to pay</button>
-            </div>
             
+              <div className="limited-time">
+                <div>
+                  <div className="lim-title">Limited time offer</div>
+                  <div className="fee-val">
+                    -₹{limitedPrice.slice(0, 2)},{limitedPrice.slice(2, 12)}
+                  </div>
+                </div>
+
+                <div className="time-offer">
+                  <img src="src\assets\time.png" alt="" /> Offer valid till 25th
+                  March 2023{" "}
+                </div>
+              </div>
+            <div className="fee">
+              <div className=""> <span className="bold">Total</span> (Incl. of 18% GST)</div>
+              <div className="fee-val bold grow-price">₹{radioPrice}</div>
+            </div>
+            <div className="fee payment">
+              <button>cancel</button>
+              <button>proceed to pay</button>
+            </div>
           </div>
-
-
+            )}
         </div>
       </div>
     </form>
