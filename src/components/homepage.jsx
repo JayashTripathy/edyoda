@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/homepage.css";
 
 function homepage() {
+  const [radioPrice, setRadioPrice] = useState("179");
+  const [limitedPrice, setLimitedPrice] = useState("18500");
+
+  const updatePrice = (e) => {
+    const value =  `${18500 - e.target.value}`;
+    setRadioPrice(e.target.value);
+    setLimitedPrice(value)
+    console.log(value);
+
+  };
+  const handleChange = (e) => {
+    console.log(e.target.value);
+  }
+  
   return (
     <form className="homepage">
       <div className="content">
@@ -48,7 +62,7 @@ function homepage() {
           </div>
         </div>
       </div>
-
+      {}
       <div className="pricing-form">
         <div className="progress">
           <div className="steps">
@@ -65,19 +79,31 @@ function homepage() {
         {/* input radios */}
 
         <div className="radio-list">
-          <div className="radio-item ">
+          <div className="radio-item">
             <input
               className="radio-input "
               type="radio"
               name="radio"
               id="radio1"
-              checked
+              disabled
+              value="99"
+              onChange={handleChange}
             />
             <label htmlFor="radio1">
               12 Months Subscription
-              <div className="price">sdsd</div>
+              <div className="price">
+                <div className="price-info">
+                  <div>
+                    Total&nbsp;
+                    <span className=" price-grow price-disabled"> ₹99 </span>
+                  </div>
+                  <div className="price-disabled">
+                    ₹8&nbsp;<span className=" price-shrink ">/mo</span>
+                  </div>
+                </div>
+              </div>
             </label>
-            <div className="tag">Recommended</div>
+            <div className="tag">Offer expired</div>
           </div>
           <div className="radio-item ">
             <input
@@ -85,14 +111,109 @@ function homepage() {
               type="radio"
               name="radio"
               id="radio2"
-              checked
+             
+              value="179"
+              onChange={handleChange}
+              onClick={updatePrice}
             />
             <label htmlFor="radio2">
               12 Months Subscription
-              <div className="price">sdsd</div>
+              <div className="price">
+                <div className="price-info">
+                  <div>
+                    Total&nbsp;<span className=" price-grow "> ₹179 </span>
+                  </div>
+                  <div>
+                    ₹15&nbsp;<span className=" price-shrink">/mo</span>
+                  </div>
+                </div>
+              </div>
             </label>
             <div className="tag">Recommended</div>
           </div>
+          <div className="radio-item ">
+            <input
+              className="radio-input "
+              type="radio"
+              name="radio"
+              id="radio3"
+            
+              value="149"
+              onChange={handleChange}
+              onClick={updatePrice}
+            />
+            <label htmlFor="radio3">
+              6 Months Subscription
+              <div className="price">
+                <div className="price-info">
+                  <div>
+                    Total&nbsp;<span className=" price-grow"> ₹149 </span>
+                  </div>
+                  <div>
+                    ₹25&nbsp;<span className=" price-shrink">/mo</span>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <div className="tag">Recommended</div>
+          </div>
+          <div className="radio-item ">
+            <input
+              className="radio-input "
+              type="radio"
+              name="radio"
+              id="radio4"
+              
+              value="99"
+              onChange={handleChange}
+              onClick={updatePrice}
+            />
+            <label htmlFor="radio4">
+              3 Months Subscription
+              <div className="price">
+                <div className="price-info">
+                  <div>
+                    Total&nbsp;<span className=" price-grow"> ₹99 </span>
+                  </div>
+                  <div>
+                    ₹33&nbsp;<span className=" price-shrink">/mo</span>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <div className="tag">Recommended</div>
+          </div>
+
+          {/* total */}
+
+          <div className="total-section">
+            <div className="fee">
+              <div className="fee-title">Subscription Fee</div>
+              <div className="fee-val">₹18,500</div>
+            </div>
+
+            <div className="limited-time">
+              <div>
+                <div className="lim-title">Limited time offer</div>
+                <div className="fee-val">₹{limitedPrice.slice(0,2)},{limitedPrice.slice(2,12)}</div>
+              </div>
+              <div className="time-offer">
+                <img src="src\assets\time.png" alt="" /> Offer valid till 25th
+                March 2023{" "}
+              </div>
+            </div>
+            <div className="fee">
+              <div className="">Total (Incl. of 18% GST)</div>
+              <div className="fee-val">₹{radioPrice}</div>
+            </div>
+            <div className=" payment">
+               <button>cancel</button>
+               <button>proceed to pay</button>
+            </div>
+            
+          </div>
+
+
         </div>
       </div>
     </form>

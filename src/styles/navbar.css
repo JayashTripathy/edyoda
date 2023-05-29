@@ -2,6 +2,8 @@
   font-family: "raleway", sans-serif;
   background: #ffffff;
   max-width: 100%;
+  position: sticky;
+  top: 0;
 }
 .nav-container {
   margin: 0 auto;
